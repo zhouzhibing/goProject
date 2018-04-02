@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5255de13-fc7b-4336-b489-9914d2dc1614" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/main/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="73" column="20" lean-forward="true" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+              <folding>
+                <element signature="e#14#396#0" expanded="true" />
+                <element signature="n#!!block;n#testHttpServer#0" expanded="false" />
+                <element signature="n#!!block;n#testConfig#0" expanded="false" />
+                <element signature="n#!!block;n#testJson#0" expanded="false" />
+                <element signature="n#!!block;n#testMysql#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SocketServer.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/socket/SocketServer.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1584">
+              <caret line="104" column="10" lean-forward="false" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunLogicServer.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/run/main/RunLogicServer.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stack.go" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/runtime/debug/stack.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileLogger.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/logger/FileLogger.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="784">
+              <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+              <folding>
+                <element signature="e#16#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file.go" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/os/file.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2080">
+              <caret line="135" column="15" lean-forward="false" selection-start-line="135" selection-start-column="15" selection-end-line="135" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JSONObject.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/json/JSONObject.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+              <folding>
+                <element signature="e#14#98#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tools.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/Tools.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="19" />
+              <folding>
+                <element signature="e#15#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mysql.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/db/mysql/Mysql.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding>
+                <element signature="e#15#237#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Writer</find>
+      <find>ArrayList</find>
+      <find>&quot;lib/go-redigo-master/internal&quot;</find>
+      <find>github.com/garyburd/</find>
+      <find>&quot;github.com/garyburd/redigo/internal&quot;</find>
+      <find>&quot;github.com</find>
+      <find>github.com</find>
+      <find>github.com/garyburd/redigo</find>
+      <find>package redis</find>
+      <find>&quot;github.com/garyburd/redigo/redis&quot;</find>
+      <find>mb</find>
+      <find>err !=</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>arrayList</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\WorkSpace\Go_WorkSpace\goTest\gameLogic\src\lib\go-redigo-master</dir>
+    </dirStrings>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$PROJECT_DIR$" />
+        <option value="file://$PROJECT_DIR$/src/lib" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/lib/go-redigo-master/redigo-master/internal/redistest/testdb.go" />
+        <option value="$PROJECT_DIR$/src/lib/go-redigo-master/github.com/garyburd/redigo/internal/redistest/testdb.go" />
+        <option value="$PROJECT_DIR$/src/lib/go-redigo-master/redis/conn_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/go-redigo-master/redis/pool_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/go-redigo-master/redis/scan_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/go-redigo-master/redis/zpop_example_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/go-redigo-master/redis/reply_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/go-redigo-master/internal/redistest/testdb.go" />
+        <option value="$PROJECT_DIR$/src/lib/go-redigo-master/redis/pubsub_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/go-redigo-master/redis/script_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/go-redigo-master/redis/pool.go" />
+        <option value="$PROJECT_DIR$/src/lib/go-redigo-master/redisx/connmux.go" />
+        <option value="$PROJECT_DIR$/src/lib/go-redigo-master/redisx/connmux_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/redigo-master/redis/pool_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/redigo-master/redis/pubsub_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/redigo-master/redis/reply_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/redigo-master/redis/scan_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/redigo-master/redis/script_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/redigo-master/redis/zpop_example_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/redigo-master/redisx/connmux.go" />
+        <option value="$PROJECT_DIR$/src/lib/redigo-master/redisx/connmux_test.go" />
+        <option value="$PROJECT_DIR$/github.com/garyburd/redigo/redis/script_test.go" />
+        <option value="$PROJECT_DIR$/github.com/garyburd/redigo/redis/conn_test.go" />
+        <option value="$PROJECT_DIR$/github.com/garyburd/redigo/redis/zpop_example_test.go" />
+        <option value="$PROJECT_DIR$/github.com/garyburd/redigo/redis/reply_test.go" />
+        <option value="$PROJECT_DIR$/github.com/garyburd/redigo/redis/pubsub_test.go" />
+        <option value="$PROJECT_DIR$/github.com/garyburd/redigo/redis/scan_test.go" />
+        <option value="$PROJECT_DIR$/github.com/garyburd/redigo/redis/pool_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/gameTools/game/tools/db/mysql/Mysql.go" />
+        <option value="$PROJECT_DIR$/src/lib/redigo-master/redis/conn_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/github.com/garyburd/redigo/internal/redistest/testdb.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/github.com/garyburd/redigo/internal/redistest/testdb.go" />
+        <option value="$PROJECT_DIR$/src/lib/gameTools/game/tools/db/redis/RedisPool.go" />
+        <option value="$PROJECT_DIR$/src/lib/gameTools/game/main/main.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/db/mysql/Mysql.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/db/mysql/Test.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/collect/ArrayList.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/http/IHttpHandle.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/collect/Map.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/http/HttpHandle.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/http/HttpServer.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/logger/logger.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/logger/FileLogger.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/socket/SocketServer.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/json/JSONObject.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/json/JsonTools.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/github.com/garyburd/redigo/redis/reply_test.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/db/redis/RedisPool.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/Tools.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/main/main.go" />
+        <option value="$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/socket/StringDeEncode.go" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1916" />
+    <option name="y" value="-4" />
+    <option name="width" value="1928" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers ProjectPane="true" />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="false" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="gameLogic" type="cbb8eebc:String" user="gameLogic" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="gameLogic" type="cbb8eebc:String" user="gameLogic" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="gameLogic" type="cbb8eebc:String" user="gameLogic" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="lib" type="cbb8eebc:String" user="lib" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="gameLogic" type="cbb8eebc:String" user="gameLogic" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="lib" type="cbb8eebc:String" user="lib" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="gameLogic" type="cbb8eebc:String" user="gameLogic" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="lib" type="cbb8eebc:String" user="lib" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="gameTools" type="cbb8eebc:String" user="gameTools" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="gameLogic" type="cbb8eebc:String" user="gameLogic" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="lib" type="cbb8eebc:String" user="lib" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="gameTools" type="cbb8eebc:String" user="gameTools" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="gameLogic" type="cbb8eebc:String" user="gameLogic" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="lib" type="cbb8eebc:String" user="lib" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="gameTools" type="cbb8eebc:String" user="gameTools" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="gameLogic" type="cbb8eebc:String" user="gameLogic" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="lib" type="cbb8eebc:String" user="lib" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="gameTools" type="cbb8eebc:String" user="gameTools" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="tools" type="cbb8eebc:String" user="tools" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="gameLogic" type="cbb8eebc:String" user="gameLogic" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="lib" type="cbb8eebc:String" user="lib" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="gameTools" type="cbb8eebc:String" user="gameTools" />
+              <item name="game" type="cbb8eebc:String" user="game" />
+              <item name="tools" type="cbb8eebc:String" user="tools" />
+              <item name="logger" type="cbb8eebc:String" user="logger" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="D:" type="cbb8eebc:String" user="D:" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="D:" type="cbb8eebc:String" user="D:" />
+              <item name="WorkSpace" type="cbb8eebc:String" user="WorkSpace" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="D:" type="cbb8eebc:String" user="D:" />
+              <item name="WorkSpace" type="cbb8eebc:String" user="WorkSpace" />
+              <item name="Go_WorkSpace" type="cbb8eebc:String" user="Go_WorkSpace" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="D:" type="cbb8eebc:String" user="D:" />
+              <item name="WorkSpace" type="cbb8eebc:String" user="WorkSpace" />
+              <item name="Go_WorkSpace" type="cbb8eebc:String" user="Go_WorkSpace" />
+              <item name="goTest" type="cbb8eebc:String" user="goTest" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="D:" type="cbb8eebc:String" user="D:" />
+              <item name="WorkSpace" type="cbb8eebc:String" user="WorkSpace" />
+              <item name="Go_WorkSpace" type="cbb8eebc:String" user="Go_WorkSpace" />
+              <item name="goTest" type="cbb8eebc:String" user="goTest" />
+              <item name="gateServer" type="cbb8eebc:String" user="gateServer" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="D:" type="cbb8eebc:String" user="D:" />
+              <item name="WorkSpace" type="cbb8eebc:String" user="WorkSpace" />
+              <item name="Go_WorkSpace" type="cbb8eebc:String" user="Go_WorkSpace" />
+              <item name="goTest" type="cbb8eebc:String" user="goTest" />
+              <item name="gateServer" type="cbb8eebc:String" user="gateServer" />
+              <item name=".idea" type="cbb8eebc:String" user=".idea" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="DB Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="61db50fb:ScratchProjectViewPane$MyPsiNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gameLogic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gameLogic" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\Go_WorkSpace\goTest\gameLogic\src\lib\src" />
+      <recent name="D:\WorkSpace\Go_WorkSpace\goTest\gameLogic\src\lib" />
+      <recent name="D:\WorkSpace\Go_WorkSpace\goTest\gameLogic\src\lib\gameTools\game\tools\db" />
+      <recent name="D:\WorkSpace\Go_WorkSpace\goTest\gameLogic\src\lib\gameTools\game\tools\net\socket" />
+      <recent name="D:\WorkSpace\Go_WorkSpace\goTest\gameLogic\src\game\game\net" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\Go_WorkSpace\goTest\gameLogic\src\lib\gameTools\game\tools\log" />
+      <recent name="D:\WorkSpace\Go_WorkSpace\goTest\gameLogic\src\lib\gameTools\game\tools\net" />
+      <recent name="D:\WorkSpace\Go_WorkSpace\gameLogic\src\lib" />
+      <recent name="D:\WorkSpace\Go_WorkSpace\gameLogic\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Application.main.go (1)">
+    <configuration name="RunLogicServer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="gameLogic" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/game/run/main/RunLogicServer.go" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration name="gobench package 'gameLogic'" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="gameLogic" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gobench" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="gameLogic" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/lib/src/gameTools/game/main/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration name="main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="gameLogic" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/lib/gameTools/game/main/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Go Application.main.go (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Go Application.RunLogicServer.go" />
+      <item index="2" class="java.lang.String" itemvalue="Go Test.gobench package 'gameLogic'" />
+      <item index="3" class="java.lang.String" itemvalue="Go Application.main.go" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Go Application.main.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Application.RunLogicServer.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Test.gobench package 'gameLogic'" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="gobench_package_'gameLogic' - 2017.09.28 at 23h 33m 12s.xml">
+      <configuration name="gobench package 'gameLogic'" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="gobench_package_'gameLogic' - 2017.09.29 at 17h 58m 19s.xml">
+      <configuration name="gobench package 'gameLogic'" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1916" y="-4" width="1928" height="1048" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18690096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08519702" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34341252" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24813631" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46170443" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29126215" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/socket/SocketClient.go</url>
+          <line>92</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="118" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/lib/redigo-master/redis/scan.go" />
+    <entry file="file://$PROJECT_DIR$/src/lib/redigo-master/redis/conn_test.go" />
+    <entry file="file://$PROJECT_DIR$/src/lib/redigo-master/redis/conn.go" />
+    <entry file="file://$PROJECT_DIR$/src/lib/redigo-master/redis/scan_test.go" />
+    <entry file="file://$PROJECT_DIR$/src/lib/redigo-master/redis/pool.go" />
+    <entry file="file://$PROJECT_DIR$/src/lib/redigo-master/internal/redistest/testdb.go" />
+    <entry file="file://$PROJECT_DIR$/src/lib/src/github.com/garyburd/redigo/internal/commandinfo_test.go" />
+    <entry file="file://$PROJECT_DIR$/src/game/game/WorldManager.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/github.com/garyburd/redigo/internal/redistest/testdb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/github.com/garyburd/redigo/internal/commandinfo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/github.com/garyburd/redigo/redis/conn.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/github.com/garyburd/redigo/redis/conn_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/db/mysql/Entity.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/db/redis/RedisOper.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/github.com/garyburd/redigo/redis/pool.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5824">
+          <caret line="376" column="0" lean-forward="false" selection-start-line="376" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/time/time.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="641" column="4" lean-forward="false" selection-start-line="641" selection-start-column="4" selection-end-line="641" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/net/http/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="2626" column="41" lean-forward="false" selection-start-line="2626" selection-start-column="36" selection-end-line="2626" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/http/IHttpHandle.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="54" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/main/main.go.mine" />
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/http/HttpHandle.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/collect/Map.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/github.com/garyburd/redigo/redis/reply.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="249" column="5" lean-forward="false" selection-start-line="249" selection-start-column="5" selection-end-line="249" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/github.com/garyburd/redigo/redis/redis.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/fmt/print.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="255" column="5" lean-forward="false" selection-start-line="255" selection-start-column="5" selection-end-line="255" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/builtin/builtin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/logger/logw.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="165" column="102" lean-forward="false" selection-start-line="165" selection-start-column="102" selection-end-line="165" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/http/HttpServer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/socket/SocketClient.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/socket/IHandle.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/socket/IDeEncode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/socket/SocketHandle.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/collect/ArrayList.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-220">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/socket/Connection.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="589" column="1" lean-forward="true" selection-start-line="589" selection-start-column="1" selection-end-line="589" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/go-simplejson/simplejson_go11.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/encoding/json/decode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="202" column="30" lean-forward="false" selection-start-line="202" selection-start-column="25" selection-end-line="202" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/db/mysql/Test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/github.com/garyburd/redigo/redis/reply_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="125" column="24" lean-forward="true" selection-start-line="125" selection-start-column="24" selection-end-line="125" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/db/redis/RedisPool.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/json/JsonTools.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/go-simplejson/simplejson.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2118">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/os/file.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2080">
+          <caret line="135" column="15" lean-forward="false" selection-start-line="135" selection-start-column="15" selection-end-line="135" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/runtime/debug/stack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/json/JSONObject.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="e#14#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/Tools.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="19" />
+          <folding>
+            <element signature="e#15#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/logger/FileLogger.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="e#16#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/socket/SocketServer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="104" column="10" lean-forward="false" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/net/socket/StringDeEncode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/tools/db/mysql/Mysql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="e#15#237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/run/main/RunLogicServer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/src/gameTools/game/main/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="73" column="20" lean-forward="true" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+          <folding>
+            <element signature="e#14#396#0" expanded="true" />
+            <element signature="n#!!block;n#testHttpServer#0" expanded="false" />
+            <element signature="n#!!block;n#testConfig#0" expanded="false" />
+            <element signature="n#!!block;n#testJson#0" expanded="false" />
+            <element signature="n#!!block;n#testMysql#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>气泡动画</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+	<h2>WebSocket Test</h2>  
+	<input type="button" text="send" value="SEND" onclick="doButtonSend()" />
+    <div id="output"></div> 
+	<div id="login">
+	        <input id="txtUid" type="text" placeholder="请输入UID" />
+			<input id="btnLogin" type="button" value="   Login   " /> 
+    </div>
+	<br/><br/>
+	<div onmousedown="mouseDown(event)" id="testcanvas"> 
+    <canvas id="canvas"  width="800" height="800" style="border:1px solid #000000; background-color:black;"></canvas>
+	<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="MyWebSocket.js"></script>
+	<script type="text/javascript" src="MyWebSocketHandle.js"></script>
+	<script type="text/javascript" src="MyAjax.js"></script>
+	<script type="text/javascript" src="WorldManager.js"></script>
+    <script>
+	
+	var worldManager = new WorldManager()
+	worldManager.Start();
+	
+	var selfCircle ;
+	var output;  
+	var sendIndex = 0;
+	var buttonSendJsonString = "{\"name\":\"test\",\"protocolNo\":181 , \"desc\":\"buttonSendJsonString\"}"
+	var sceneId = 1111;
+	var index=-1;
+	
+	var toPostion = {"x":0 , "y":0};
+	var boxObject = {"x":0 , "y":0 , "w":50 , "h":50};
+		
+	
+	 //初始变量
+	var canvas = document.getElementById("canvas"),
+		c = canvas.getContext('2d'),
+		timer,
+		mouseX,
+		mouseY,
+		canvasWidth,
+		canvasHeight,
+		maxRadius = 35,
+		colorArray = ['red', 'blue', 'pink', 'yellow'],  //气泡颜色数组
+		circleArray = [];   //气泡空数组
+		//var myCircle = new Circle(10,10,10);
+		var myCircle=null;
+			
+	
+	function init()
+	{ 
+		output = document.getElementById("output"); 
+		
+		/*
+		document.getElementById("btnLogin").onclick=function()
+		{
+			var uId = $('#uId').val();
+			var ip="192.168.1.55";
+			var port="22345"
+			var currentBtn = document.getElementById("btnLogin");
+			currentBtn.style.display = "none"; //style中的display属性
+			
+			
+			createWebSocket(ip,port);
+			
+			//openUser();
+		}
+		*/
+		
+		myWebSocketHandle = new MyWebSocketHandle()
+		myWebSocket = new MyWebSocket("localhost" , 22345 , myWebSocketHandle)
+		
+	}  
+	
+	function createWebSocket(ip , port ) 
+	{
+		var wsUri ="ws://"+ip+":"+port+"/WebSocket/WebSocketHandle"; 
+		//alert(wsUri)
+		
+		websocket = new WebSocket(wsUri); 
+		websocket.onopen = function(evt) { onOpen(evt) }; 
+		websocket.onclose = function(evt) { onClose(evt) }; 
+		websocket.onmessage = function(evt) { onMessage(evt) }; 
+		websocket.onerror = function(evt) { onError(evt) }; 
+	}  
+ 
+    function onOpen(evt) 
+	{ 
+		writeToScreen("CONNECTED"); 
+		var uId = $('#uId').val(); 
+		
+		doSend("{\"name\":\"test\",\"protocolNo\":100001 , \"desc\":\"onOpen\"  , \"toSceneId\":" + sceneId + ",\"uId\": \""+uId+"\"}"	); 
+	}  
+	
+	function onClose(evt) 
+	{ 
+        writeToScreen("DISCONNECTED"); 
+	}  
+ 
+    function onMessage(evt) 
+	{ 
+        writeToScreen('<span style="color: blue;">RESPONSE: '+ evt.data+'</span>'); 
+		
+		var o = eval('(' + evt.data + ')');
+		var protocolNo = o.protocolNo
+		
+		switch ( protocolNo ) 
+		{
+			case 100001:
+				openUser(o);
+			case 900001:
+				newAddUser(o);
+		}
+        //websocket.close(); 
+	}  
+	
+    function onError(evt) 
+	{ 
+        writeToScreen('<span style="color: red;">ERROR:</span> '+ evt.data); 
+	}  
+ 
+    function doSend(message) 
+	{ 
+		//sendIndex++
+		//message = message + " : " + sendIndex
+        writeToScreen("SENT: " + message);  
+        websocket.send(message); 
+	}  
+	
+	function doButtonSend() 
+	{ 
+		//sendIndex++
+		//message = message + " : " + sendIndex
+		message = buttonSendJsonString
+        writeToScreen("SENT: " + message);  
+        websocket.send(message); 
+	}  
+ 
+ 
+    function writeToScreen(message) 
+	{ 
+        var pre = document.createElement("p"); 
+        pre.style.wordWrap = "break-word"; 
+        pre.innerHTML = message; output.appendChild(pre); 
+	}
+ 
+ 
+    window.addEventListener("load", init, false);  
+	
+	function doButtonLogin() 
+	{ 
+		//sendIndex++
+		//message = message + " : " + sendIndex
+		message = buttonSendJsonString
+        writeToScreen("SENT: " + message);  
+        websocket.send(message); 
+	}  
+	
+    //自适应窗口
+    window.addEventListener("resize",resizeCanvas,false);
+
+ //////////////////////////////////////////////////////////////websocket 结束///////////////////////////////////////////////////////////////////////
+ 
+        function resizeCanvas(){
+		
+            if (!!canvas) {
+                canvasHeight = 800;
+                canvasWidth = 800;
+            }
+            updateAll();
+        }
+
+        //鼠标移动
+        canvas.onmousemove = function(e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        }
+
+        //气泡函数
+        function Circle(xCoordinate, yCoordinate, radius,uId)
+		{
+            var randomNumber = Math.floor((Math.random() * 4));         //0-4随机数
+            var randomTrueOrFalse = Math.floor(Math.random() * 2);      //0-2随机数
+            var randomTrueOrFalseTwo = Math.floor(Math.random() * 2);   //0-2随机数
+
+            this.xCoordinate = xCoordinate;                             //x轴坐标
+            this.yCoordinate = yCoordinate;                             //y轴坐标
+			this.uId=uId;
+			this.toPostion = {"x":0 , "y":0};
+            this.radius = radius;                                       //气泡半径（决定气泡大小）
+            this.color = colorArray[randomNumber];                      //随机气泡颜色值
+			this.move = false
+			var speed = 3
+
+            //气泡移动x坐标判断增减
+            if (randomTrueOrFalse == 1) {
+                this.xVelocity = -Math.random() * 1;
+            } else {
+                this.xVelocity = Math.random() * 1;
+            }
+
+            //气泡移动y坐标判断增减
+            if (randomTrueOrFalse == 1) {
+                this.yVelocity = -Math.random() * 1;
+            } else {
+                this.yVelocity = Math.random() * 1;
+            }
+
+			this.userId = function()
+			{
+				return this.uId;
+			}
+            //距离接近0时，增加半径
+
+            this.update = function() {
+			
+                this.movePosition();
+				this.draw();
+            }
+
+            //绘制气泡
+            this.draw = function() {
+				
+                c.beginPath();
+                c.arc(this.xCoordinate, this.yCoordinate, this.radius, 0, Math.PI * 2)
+                c.fillStyle = this.color;
+                c.fill();
+            }
+			
+			this.movePosition = function() {
+				
+				if ( this.move == false)
+					return;
+				
+				if(this.xCoordinate <= this.toPostion.x)
+					this.xCoordinate += speed
+				else
+					this.xCoordinate -= speed
+								
+				if(this.yCoordinate <= this.toPostion.y)
+					this.yCoordinate += speed
+				else
+					this.yCoordinate -= speed
+		
+				if((this.xCoordinate >= this.toPostion.x -5 && this.xCoordinate <= this.toPostion.x +5)
+					&& (this.yCoordinate >= this.toPostion.y -5 && this.yCoordinate <= this.toPostion.y +5))
+							this.move = false;
+			}
+			
+			this.startMove = function(toX ,  toY)
+			{
+				this.move = true;
+				this.toPostion.x = toX;
+				this.toPostion.y = toY;
+				
+			}
+			
+			this.robotRandomPosition = function()
+			{
+				this.xCoordinate += this.xVelocity;         //气泡x坐标，随着随机数的 True Or False 的判断，在改变
+                this.yCoordinate += this.yVelocity;         //气泡y坐标，随着随机数的 True Or False 的判断，在改变
+                var xDistance = mouseX - this.xCoordinate;  //x距离（鼠标x坐标 -  气泡x坐标 = 距离）
+                var yDistance = mouseY - this.yCoordinate;  //y距离（鼠标y坐标 -  气泡y坐标 = 距离）
+                var originalRadius = radius;
+                
+
+                //移动函数
+                if (this.xCoordinate + this.radius > canvasWidth || this.xCoordinate - this.radius < 0) {
+                    this.xVelocity = -this.xVelocity;
+                };  
+                if (this.yCoordinate + this.radius > canvasHeight || this.yCoordinate - this.radius < 0) {
+                    this.yVelocity = - this.yVelocity;  
+                };
+			}
+        }
+
+        //气泡数量函数
+        function count(){
+            //循环气泡数量，将随机数据 push 到 circleArray 数组中
+            for (var i = 0; i < 0; i++) {
+                var randomXCoordinate = Math.random() * canvasWidth;
+                var randomYCoordinate = Math.random() * canvasHeight;
+                var randomRadius = Math.random() * 5;
+				randomRadius = 15;
+                circleArray.push(new Circle(randomXCoordinate,randomYCoordinate ,randomRadius))
+            }
+        }
+		
+		
+		
+        //更新函数 
+        function updateAll() 
+		{
+		    c.clearRect(0,0, canvasWidth, canvasHeight);    //清空 Canvas
+		
+			if (myCircle != null )
+				myCircle.update();
+				
+            for (var i = 0; i < circleArray.length; i++)
+			{
+				//alert(ircleArray[i].userId);
+				circleArray[i].update();
+            }
+				
+			clearTimeout(timer);
+			timer = setTimeout(updateAll, 10)
+		}
+		
+	
+        resizeCanvas();
+        //count();
+        updateAll();
+		
+	function newAddUser(o)
+	{
+		circleArray.push(new Circle(o.X,o.Y ,20));
+	}
+	
+	  //打开后创建用户
+	function openUser( o )
+	{
+		//var testJson="{\"desc\":\"buttonSendJsonString\",\"name\":\"test\",\"otherPlayList\":[{\"Id\":2,\"UId\":\"aaaaaa\",\"Scene_id\":11111,\"X\":200,\"Y\":200},{\"Id\":3,\"UId\":\"aaaaaa\",\"Scene_id\":11111,\"X\":300,\"Y\":300}],\"protocolNo\":100001,\"selfPlay\":{\"Id\":1,\"UId\":\"aaaaaa\",\"Scene_id\":11111,\"X\":100,\"Y\":100},\"toSceneId\":1111,\"uId\":\"aaaaaa\"}";
+		
+		//o = eval('(' + testJson + ')');
+
+		var selfPlay = o.selfPlay
+		
+		myCircle = new Circle(selfPlay.X , selfPlay.Y , 20,selfPlay.Id)
+		if(circleArray.length>0)
+			circleArray = [];
+		
+		for (var i = 0; i < o.otherPlayList.length; i++) 
+		{
+			circleArray.push(new Circle(o.otherPlayList[i].X,o.otherPlayList[i].Y ,20,o.otherPlayList[i].Id));
+		}
+	}
+	
+	function exitUser(uId)
+	{
+				
+            for (var i = 0; i < circleArray.length; i++)
+			{
+				alert(ircleArray[i].userId);
+				
+            }
+	}
+		
+	function mouseDown(e)  
+	{  
+		x = getCanvasPos(canvas,e).x;
+		y = getCanvasPos(canvas,e).y;
+		
+		if(myCircle!=null)
+			myCircle.startMove(x ,y );
+		
+	} 
+	
+
+	
+	function getCanvasPos(canvas,e)  
+	{//获取鼠标在canvas上的坐标  
+		var rect = canvas.getBoundingClientRect();   
+		return {   
+		 x: e.clientX - rect.left * (canvas.width / rect.width),  
+		 y: e.clientY - rect.top * (canvas.height / rect.height)  
+	   };  
+	}  
+	
+	
+	
+	
+
+	
+		 
+		 
+    </script>
+</body>
+</html>
